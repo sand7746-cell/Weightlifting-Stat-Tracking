@@ -12,7 +12,10 @@ All data is converted into a tidy format suitable for external analytics tools l
 ### 1.Training Log (Raw Input)
 - Central sheet where users enter day-to-day lifts.
 - Individual lift pages automatically pull data from the log.
-- Designed for simplicity: user inputs → formulas transform → dashboard and lift pages update.
+- Designed for simplicity: user inputs → formulas transform → dashboard and lift pages update. 
+
+<img width="3199" height="1308" alt="Spencer Weightlifting Stat Tracking - TrainingLog" src="https://github.com/user-attachments/assets/3750aa74-d843-4596-96c6-d9270b4a9f1b" />
+  
 ### 2. Body Weight Page
 - Users log their weight periodically.
 - Uses LINEST() regression to predict weight trends.
@@ -20,6 +23,9 @@ All data is converted into a tidy format suitable for external analytics tools l
 - Finds the closest weigh-in before and after a lift date.
 - Uses the nearest weight or average when between two dates.
 - Bodyweight is used for relative strength and percentile calculations.
+
+<img width="2786" height="1268" alt="Spencer Weightlifting Stat Tracking - Weight" src="https://github.com/user-attachments/assets/7a6ca3b2-3193-4ba7-930f-90b6e1ed88af" />
+
 ### 3. Individual Lift Pages (e.g., Bench, Squat, Deadlift)
 Each lift page shows:
 - PR (all-time max)
@@ -33,6 +39,8 @@ Absolute lift progress
 Relative lift progress
 - A lift score based on strengthlevel.com percentile tables
 
+<img width="2447" height="2135" alt="Spencer Weightlifting Stat Tracking - Bench" src="https://github.com/user-attachments/assets/17fab4ba-4500-4b85-922d-8baa9bb5b794" />
+
 ### 4. Dashboard
 - Provides a high-level snapshot:
 - Explanations of features
@@ -41,10 +49,14 @@ Relative lift progress
 - 1000-lb club progress
 - Summary of PRs and changes over time
 
+<img width="3226" height="1929" alt="Spencer Weightlifting Stat Tracking - Dashboard" src="https://github.com/user-attachments/assets/29e91d76-e340-4909-bcc7-780cce337d65" />
+
 ### 5. Tidy Data Export
 All metrics are transposed and converted into "long format" using query functions.
 Each row contains: date, bodyweight, lift type, and metrics.
 Ideal for Tableau
+
+<img width="3300" height="2550" alt="Spencer Weightlifting Stat Tracking - TableauData" src="https://github.com/user-attachments/assets/ffb39f38-7796-45aa-a7b3-ad31781da6f5" />
 
 # Example Formulas Used
 ### Merge lift datasets
@@ -98,9 +110,13 @@ Ideal for Tableau
 "select Col1, Col2, Col3, Col4, Col5, Col6, Col7 where Col1 is not null",
 0)
 ```
-## Why This Tracker Works
-Removes manual calculations
-Automatically tracks long-term performance
-Accounts for bodyweight changes
-Compares normalized performance between lifters
-Produces analytics-ready datasets
+
+### 5. Tableau Example Graphs
+
+
+## Why This Tracker Is Useful
+- Removes manual calculations
+- Automatically tracks long-term performance
+- Accounts for bodyweight changes
+- Compares normalized performance between lifters
+- Produces analytics-ready datasets
