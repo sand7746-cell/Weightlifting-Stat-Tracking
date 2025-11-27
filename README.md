@@ -112,6 +112,10 @@ Ideal for Tableau
 ```
 
 ### 5. Tableau Example Graphs
+- Hypothetical data was used to create the following visualizations
+<img width="800" height="600" alt="Captura de Pantalla 2025-11-26 a la(s) 21 52 05" src="https://github.com/user-attachments/assets/73818535-6aa3-47ec-8110-053870f2479f" />
+
+<img width="800" height="800" alt="Captura de Pantalla 2025-11-26 a la(s) 21 45 07" src="https://github.com/user-attachments/assets/c4047875-8893-4109-a64f-8dd0cc2b096c" />
 
 
 ## Why This Tracker Is Useful
